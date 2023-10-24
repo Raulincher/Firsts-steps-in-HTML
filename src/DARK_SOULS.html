@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>AC1_Eneba_products</title>
+
+    </head>
+
+    <body>
+        <!--
+            Empiezo usando el tag nav ya que me permite definir una zona de navegación a través de mis paginas html.
+            Tambien hago uso de los tags a e img. 
+            El tag a lo uso para poder linkear los diferentes html con mis textos e imagen para así navegar entre htmls.
+            El tag img lo uso para así poder mostrar una imagen e implementar un tetxo alternativo si no llegara a cargar bien el contenido
+            He decidido hacer todo esto dentro de head para que cuando entres a la página tengas este recurso disponible.
+        -->
+        <header>
+            <nav><a href="index.html"><img src="MEDIA/img/logo_eneba.png" alt="logo" height="100" width="125"></a> <a href="index.html">Home</a>- <a href="PRODUCTS.html" >PRODUCTS</a> - <a href="BASKET.html">Basket</a> - <a href="CONTACT.html">Contact</a> - <a href="ABOUT.html">About</a></nav>
+        </header> 
+
+        <main>
+            <!--Para poder representar mi producto he decidido englobarlo todo en un tag article ya que todo lo que hay dentro de él es información del mismo tema.
+            He decidido separa la descripción de mi producto y sus características con el tag section. Lo he hehco así para diferenciar entre estas dos ya que es información relevante pero dependen del mismo tema que es mi producto.
+            Para los titulos he decidio usar los tags h1 y h3. El tiutlo del juego tiene más relevancia que nada por eso es h1, en cambio los subtiutlos de los diferentes apartados son h3 ya que son información del propio producto.
+            Cada parrafo esta separado gracias al tag p el cual me permite distribuir la información de mejor manera.
+            Por último destaco que he usado una lista ordenada con el ol en la zona de características del producto. así el usuario puede localizar sus especificaciones más fácilmente y ver si se adapta a sus gustos.-->
+            <article>
+                <h1>Dark Souls 3</h1>
+                <img src="MEDIA/img/dark_souls_3.jpg" alt="game 2 Dark Souls 3" height="500" width="350">
+
+                <section>
+                    <h3>Product Description</h3>
+
+                    <p>Dark Souls 3 es la tercera entrega de la saga Dark Souls para PC, Xbox One y PS4, que combina elementos de los juegos de aventura y acción y tercera persona, 
+                        con tintes de rol para mejorar a nuestro personaje. El tercer capítulo de la serie de títulos de From Software será el primero en ser desarrollado íntegramente en consolas como Xbox One y PlayStation 4. 
+                    </p>
+
+                    <p>En esta nueva entrega, visitaremos el oscuro y amplio reino de Lothric, 
+                        aprenderemos nuevas habilidades vinculadas a las armas que empuñemos y combatiremos contra duras y ásperas criaturas, que en esta ocasión serán más peligrosas y rápidas que nunca.
+                    </p>
+                   </section>
+
+                <section>
+                    <h3>Product Characteristics</h3>
+                    <ol>
+                        <li>Precio: 15€</li>
+                        <li>Plataformas: PC,PS4,PS5,XBOX ONE,XBOX Series S</li>
+                        <li>Juego completo</li>
+                        <li>Categorias: RPG, Hack and Slash</li>
+                        <li>Clasificación: <img src="MEDIA/img/PEGI16.png" alt="PEGI 16" height="75" width="50"></li>
+                    </ol>
+                </section>
+            </article>
+        </main>
+            <!--Aquí hago uso de un tag footer el cual hace referencia al pie de página de mi web. Este lo uso para dar información sobre la redes sociales relevantes de mi web, temas legales, etc.-->
+            <footer>
+                <p><img src="MEDIA/img/logo_twitter.png" alt="logo twitter" height="50" width="50"> <img src="MEDIA/img/logo_reddit.png" alt="logo reddit" height="50" width="50"> <img src="MEDIA/img/logo_instagram.png" alt="logo instagram" height="50" width="50">
+                Copyright © 2021 Eneba. Todos los derechos reservados. SA “Helis play”, C/Gyneju 4-333, Vilnius, República de Lituania. <a href="TERMS_OF_USE.html">Data policy & Terms of use</a></p>
+            </footer>
+    </body>
+</html>

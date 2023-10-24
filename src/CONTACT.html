@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>AC1_Eneba_contact</title>
+    </head>
+    
+    <body>
+        <!--
+            Empiezo usando el tag nav ya que me permite definir una zona de navegación a través de mis paginas html.
+            Tambien hago uso de los tags a e img. 
+            El tag a lo uso para poder linkear los diferentes html con mis textos e imagen para así navegar entre htmls.
+            El tag img lo uso para así poder mostrar una imagen e implementar un tetxo alternativo si no llegara a cargar bien el contenido
+            He decidido hacer todo esto dentro de head para que cuando entres a la página tengas este recurso disponible.
+        -->
+        <header>
+            <nav><a href="index.html"><img src="MEDIA/img/logo_eneba.png" alt="logo" height="100" width="125"></a> <a href="index.html">Home</a>- <a href="PRODUCTS.html" >PRODUCTS</a> - <a href="BASKET.html">Basket</a> - <a href="CONTACT.html">Contact</a> - <a href="ABOUT.html">About</a></nav>
+        </header> 
+        <main>
+            <!--
+            A partir de aqui decido usar un article para poder juntar toda la info de esta página. 
+            Al ser todo información sobre la empresa y personal he decidido juntarlo ya que al fin y al cabo no dejan de ser lo mismo, datos más personales.
+            Para poder crear titulos he usado el h1 para el titulo más relevante y h2 para los inferiores.
+            Tambien he usado el tag ul para crear listas desordenadas y así enfatizar en la información que proporcionan sus campos
+            -->
+            <article>
+
+                <h1> CONTACT </h1>
+                <img src="MEDIA/img/empresa_eneba.jpg" alt="edificio empresa" height="200" width="300">
+                <!--Aquí he decicido remarcar el nombre de la empresa en negrita para darle más importancia respecto a la otra información-->
+                <p><b>Eneba</b></p>
+                <p>C/Gyneju 4-333</p>
+                <p>01100</p>
+                <p>Vilnius(Lituania)</p>
+
+                <ul>
+                    <li>Email: support@eneba.com</li>
+                    <li>Phone: 202-555-0128</li>
+                </ul>
+
+                <h2>Contact Form</h2>
+                <!--Aquí empiezo con el tag form el cual indica que contiene un formulario que puede ser rellenado por los usuarios.
+                    Como los usuarios deben rellenar los inputs con información personal he decidido usar el tag fieldset junto al tag legend para juntar todos los campos similares dentro de un recuadro. 
+                    Remarcando así que son informaciones relacionadas. -->
+                <form>
+                    
+                    <fieldset>
+
+                        <legend><h2>Personal data</h2></legend>
+                        <!--
+                            Cada apartado de rellenado tiene su propio tag de input. Por ejemplo para la fecha he usado el tag input, que es el que permite que el usuario interactue, del tipo date para así poder aclarar que es una fecha
+                            Tambien he usado el tag b para marcar en negrita las labels. Así el usuario puede identificar más fácilmente que información tiene que aportar.
+                        -->
+                        <p><b> <label>Name</label></b>
+                        <input type="text"></p>
+
+                        <p><b><label>Email</label></b>
+                        <input type="email">
+
+                        <p><b><label>Date</label></b>
+                        <input type="date"></p>
+                        
+                        <p><b><label>Phone</label></b>
+                        <input type="tel"></p>
+
+                    </fieldset>
+
+                    <!--He decidido sacar fuera la caja de texto del mensaje de mi fieldset ya que no pertenece al mismo campo de información personal
+                    Para escribir he decidido usar el tag textarea ya qu este permite hacer intrducciones de texto más grandes, categorizando así su contenido en opiniones o comentarios de los usuarios-->
+
+                    <b><label for="Message">Message</label></b>
+                    <textarea name="Message" id="Message" cols="50" rows="4"></textarea>
+
+                        
+                    <!--Por ultimo creo un boton de enviar para que la información del usuario pueda ser enviada-->
+                    <p><input type="button" name="send button" value="Enviar"></p>
+
+                </form>
+
+
+            </article>
+        </main>
+        <!--Aquí hago uso de un tag footer el cual hace referencia al pie de página de mi web. Este lo uso para dar información sobre la redes sociales relevantes de mi web, temas legales, etc.-->
+        <footer>
+            <p><img src="MEDIA/img/logo_twitter.png" alt="logo twitter" height="50" width="50"> <img src="MEDIA/img/logo_reddit.png" alt="logo reddit" height="50" width="50"> <img src="MEDIA/img/logo_instagram.png" alt="logo instagram" height="50" width="50">
+            Copyright © 2021 Eneba. Todos los derechos reservados. SA “Helis play”, C/Gyneju 4-333, Vilnius, República de Lituania. <a href="TERMS_OF_USE.html">Data policy & Terms of use</a></p>
+        </footer>
+    </body>
+</html>

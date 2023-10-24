@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>AC1_Eneba_basket</title>
+
+    </head>
+
+    <body>
+        <!--
+            Empiezo usando el tag nav ya que me permite definir una zona de navegación a través de mis paginas html.
+            Tambien hago uso de los tags a e img. 
+            El tag a lo uso para poder linkear los diferentes html con mis textos e imagen para así navegar entre htmls.
+            El tag img lo uso para así poder mostrar una imagen e implementar un tetxo alternativo si no llegara a cargar bien el contenido
+            He decidido hacer todo esto dentro de head para que cuando entres a la página tengas este recurso disponible.
+        -->
+        <header>
+            <nav><a href="index.html"><img src="MEDIA/img/logo_eneba.png" alt="logo" height="100" width="125"></a> <a href="index.html">Home</a>- <a href="PRODUCTS.html" >PRODUCTS</a> - <a href="BASKET.html">Basket</a> - <a href="CONTACT.html">Contact</a> - <a href="ABOUT.html">About</a></nav>
+        </header> 
+        
+        <main>
+
+        <article>
+            
+            <H1>BASKET</H1>
+
+            <p>Aquí encontrarás todas tus selecciones de compra. Puedes quitar elementos del carrito a tu gusto.</p>
+            <!--He usado un tag de table para poder crear un carrito de la compra bastante bien alineado entre los elementos. 
+                He decidido hacerlo así para que el usuario pudiera comprobar todos los elementos a la vez bien diferenciados-->
+            <table>
+                <!--Aqui uso thead para diferenciar el encabezado de mi tabla-->
+                <thead>
+                    <tr>
+                        <th><b>Imagen</b></th>
+                        <th><b>Producto</b></th>
+                        <th><b>Precio</b></th>
+                        <th><b>Unidades</b></th>
+                        <th><b>Total</b></th>
+                        <th><b>Acciones</b></th>
+                    </tr>
+                </thead> 
+                <!--Aqui tengo todo mi contenido de la tabla en general-->   
+                <tbody>
+                    <tr>
+                        <td><img src="MEDIA/img/destiny.jpeg" alt="destiny" height="125" width="85"></td>
+                        <td><strong>Destiny 2: Legendary Edition</strong></td>
+                        <td>80€</td>
+                        <td>1</td>
+                        <td>80€</td>
+                        <td><input type="button" name="delete button" value="Borrar"></td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="MEDIA/img/dark_souls_3.jpg" alt="dark souls 3" height="125" width="85"></td>
+                        <td><strong>Dark souls 3</strong></td>
+                        <td>10€</td>
+                        <td>3</td>
+                        <td>30€</td>
+                        <td><input type="button" name="delete button" value="Borrar"></td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="MEDIA/img/Doom_Eternal.jpeg" alt="Doom:Eternal" height="125" width="85"></td>
+                        <td><strong>Doom: Eternal</strong></td>
+                        <td>20€</td>
+                        <td>2</td>
+                        <td>40€</td>
+                        <td><input type="button" name="delete button" value="Borrar"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><strong>150€</strong></td>
+                        <td><input type="button" name="pay button" value="Pagar"></td>
+                    </tr>                
+                </tbody>
+                <!--Un pie de tabla final para hacer un breve recordatorio a los usuarios-->
+                <tfoot>
+                    <tr>
+                    <td colspan="6">Una vez hayas revisado tus compras puedes darle al boton de pagar. No se admiten devoluciones.</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+         </article>
+        </main>
+        <!--Aquí hago uso de un tag footer el cual hace referencia al pie de página de mi web. Este lo uso para dar información sobre la redes sociales relevantes de mi web, temas legales, etc.-->
+        <footer>
+            <p><img src="MEDIA/img/logo_twitter.png" alt="logo twitter" height="50" width="50"> <img src="MEDIA/img/logo_reddit.png" alt="logo reddit" height="50" width="50"> <img src="MEDIA/img/logo_instagram.png" alt="logo instagram" height="50" width="50">
+            Copyright © 2021 Eneba. Todos los derechos reservados. SA “Helis play”, C/Gyneju 4-333, Vilnius, República de Lituania. <a href="TERMS_OF_USE.html">Data policy & Terms of use</a></p>
+        </footer>
+
+    </body>
+</html>

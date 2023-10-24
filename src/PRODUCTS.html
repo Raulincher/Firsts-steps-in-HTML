@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>AC1_Eneba_products</title>
+
+    </head>
+
+    <body>
+        <!--
+            Empiezo usando el tag nav ya que me permite definir una zona de navegación a través de mis paginas html.
+            Tambien hago uso de los tags a e img. 
+            El tag a lo uso para poder linkear los diferentes html con mis textos e imagen para así navegar entre htmls.
+            El tag img lo uso para así poder mostrar una imagen e implementar un tetxo alternativo si no llegara a cargar bien el contenido
+            He decidido hacer todo esto dentro de head para que cuando entres a la página tengas este recurso disponible.
+        -->
+        <header>
+            <nav><a href="index.html"><img src="MEDIA/img/logo_eneba.png" alt="logo" height="100" width="125"></a> <a href="index.html">Home</a>- <a href="PRODUCTS.html" >PRODUCTS</a> - <a href="BASKET.html">Basket</a> - <a href="CONTACT.html">Contact</a> - <a href="ABOUT.html">About</a></nav>
+        </header> 
+        <main>
+            <!--Aqui uso el tag article para juntar todos los productos en general para luego separarlos por secciones con el tag section para hacer así una distinción entre juegos.
+               Hago uso de tags de titulos como h1 o h3 para dar relevancia a la frase o palabra contenida, en el caso del h1 tendrá más que relevancia que el h3 ya que son titulos a diferentes niveles.
+               Hago uso de listas desordenadas para mencionar que tipo es (DLC o juego completo), las plataformas disponibles y su precio.
+               Tambien hago uso del tag input del tipo button para poder crear un boton de compra directa.
+               Tambien he añadido enlaces, tanto en las fotos como el título del juego. Así podrás desplazarte a la página del mismo sin problemas.
+               Los tags p los uso para hacer saltos de paragrafos y así tener la información bien estructurada
+               -->
+        <article>
+            <H1>PRODUCTS</H1>
+
+            <section>
+                <a href="DESTINY.html"><img src="MEDIA/img/destiny.jpeg" alt="game 1 Destiny" height="250" width="175"></a>
+                <a href="DESTINY.html"><h3>Destiny 2: Legendary Edition</h3></a>
+                <p>Destiny 2 es un MMORPG en el que forjarás tu propia leyenda y combatirás contra la oscuridad más profunda. Este pack incluye 3 historias diferentes para así expandir el universo Destiny.</p>
+                <ul>
+                    <li>Precio: 80€.</li>
+                    <li>Plataformas: PC,PS4,PS5,XBOX ONE,XBOX Series S.</li>
+                    <li>DLC: Forsaken, Shadowkeep, Beyond the light.</li>
+                </ul>
+                <p><input type="button" name="purchase button" value="Comprar"></p>
+            </section>
+
+            <section>
+                <a href="DARK_SOULS.html"><img src="MEDIA/img/dark_souls_3.jpg" alt="game 2 Dark Souls" height="250" width="175"></a>
+                <a href="DARK_SOULS.html"><h3>Dark souls 3</h3></a>
+                <p>Eres un ser de la ceniza que ha despertado de su letargo. Tu deber es derrotar a los señores de la ceniza i enlazar la ultima llama.</p>
+                <ul>
+                    <li>Precio: 15€</li>
+                    <li>Plataformas: PC,PS4,PS5,XBOX ONE,XBOX Series S</li>
+                    <li>Juego completo</li>
+                </ul>
+                <p><input type="button" name="purchase button" value="Comprar"></p>
+            </section>
+
+            <section>
+                <a href="DOOM.html"><img src="MEDIA/img/Doom_Eternal.jpeg" alt="game 3 Doom: Eternal" height="250" width="175"></a>
+                <a href="DOOM.html"><h3>DOOM: Eternal</h3></a>
+                <p>Destroza y desgarra en esta ultima entrega de la tan aclamada franquicia de Bethesda DOOM. 
+                     Esta nueva entrega ofrece una experiencia de juego completamente diferente respecto a sus predecesores.
+                    Enfretate a innumerables hordas de demonios con una potencia de fuego abrumadora.</p>
+                <ul>
+                    <li>Precio: 20€</li>
+                    <li>Plataformas: PC,PS4,PS5,XBOX ONE,XBOX Series S</li>
+                    <li>Juego completo</li>
+                </ul>
+                <p><input type="button" name="purchase button" value="Comprar"></p>
+            </section>
+        </article>
+    </main>
+    <!--Aquí hago uso de un tag footer el cual hace referencia al pie de página de mi web. Este lo uso para dar información sobre la redes sociales relevantes de mi web, temas legales, etc.-->
+    <footer>
+        <p><img src="MEDIA/img/logo_twitter.png" alt="logo twitter" height="50" width="50"> <img src="MEDIA/img/logo_reddit.png" alt="logo reddit" height="50" width="50"> <img src="MEDIA/img/logo_instagram.png" alt="logo instagram" height="50" width="50">
+        Copyright © 2021 Eneba. Todos los derechos reservados. SA “Helis play”, C/Gyneju 4-333, Vilnius, República de Lituania. <a href="TERMS_OF_USE.html">Data policy & Terms of use</a></p>
+    </footer>
+    </body>
+
+</html>

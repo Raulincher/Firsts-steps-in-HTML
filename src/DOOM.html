@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>AC1_Eneba_products</title>
+
+    </head>
+
+    <body>
+        <!--
+            Empiezo usando el tag nav ya que me permite definir una zona de navegación a través de mis paginas html.
+            Tambien hago uso de los tags a e img. 
+            El tag a lo uso para poder linkear los diferentes html con mis textos e imagen para así navegar entre htmls.
+            El tag img lo uso para así poder mostrar una imagen e implementar un tetxo alternativo si no llegara a cargar bien el contenido
+            He decidido hacer todo esto dentro de head para que cuando entres a la página tengas este recurso disponible.
+        -->
+        <header>
+            <nav><a href="index.html"><img src="MEDIA/img/logo_eneba.png" alt="logo" height="100" width="125"></a> <a href="index.html">Home</a>- <a href="PRODUCTS.html" >PRODUCTS</a> - <a href="BASKET.html">Basket</a> - <a href="CONTACT.html">Contact</a> - <a href="ABOUT.html">About</a></nav>
+        </header> 
+
+        <main>
+            <!--Para poder representar mi producto he decidido englobarlo todo en un tag article ya que todo lo que hay dentro de él es información del mismo tema.
+            He decidido separa la descripción de mi producto y sus características con el tag section. Lo he hehco así para diferenciar entre estas dos ya que es información relevante pero dependen del mismo tema que es mi producto.
+            Para los titulos he decidio usar los tags h1 y h3. El tiutlo del juego tiene más relevancia que nada por eso es h1, en cambio los subtiutlos de los diferentes apartados son h3 ya que son información del propio producto.
+            Cada parrafo esta separado gracias al tag p el cual me permite distribuir la información de mejor manera.
+            Por último destaco que he usado una lista ordenada con el ol en la zona de características del producto. así el usuario puede localizar sus especificaciones más fácilmente y ver si se adapta a sus gustos.-->
+            <article>
+                <h1>Dark Souls 3</h1>
+                <img src="MEDIA/img/Doom_Eternal.jpeg" alt="game 3 Doom Eternal" height="500" width="350">
+
+                <section>
+                    <h3>Product Description</h3>
+
+                    <p>
+                        DOOM Eternal es la secuela del éxito de 2016, DOOM. Ahondando de nuevo en las raíces clásicas del género de acción en primera persona, 
+                        la segunda parte desarrollada por id Software y Bethesda sigue apostando por la guerra sin cuartel contra los demonios
+                    </p>
+
+                    <p>
+                        DOOM Eternal nos trasladará a un escenario muy diferente al de la primera parte. Los demonios y las criaturas más raras del averno han invadido la Tierra, desatando el Infierno en ella. 
+                        Nuestra misión no será otra que la de pararle los pies, evitando que su maldad y su corrupción se extienda por todos los lugares del planeta. 
+                        Al trasladarse a la Tierra, el juego cuenta con más ambientes y lugares más abiertos, aumentándose la escala del título en varios enteros.
+                    </p>
+                    <p> 
+                        Ahora contamos con edificios gigantescos al borde del colapso, ríos de lava, rascacielos hundiéndose, grietas dimensionales y cientos de miles de demonios entrando a tropel en retorcidas legiones. 
+                        También visitaremos otros lugares, siguiendo el desarrollo del DOOM II original. Entraremos en Phobos, el satélite de Marte tomado por la UMC, 
+                        permitiéndonos incluso controlar la gigantesca BFG 10.000, un enorme cañón con capacidad orbital que nos ayudará a eliminar la amenaza demoniaca que se cierne sobre la humanidad.
+                    </p>
+                </section>
+                <section>
+                    <h3>Product Characteristics</h3>
+                    <ol>
+                        <li>Precio: 15€</li>
+                        <li>Plataformas: PC,PS4,PS5,XBOX ONE,XBOX Series S</li>
+                        <li>Juego completo</li>
+                        <li>Categorias: FPS, Gore</li>
+                        <li>Clasificación: <img src="MEDIA/img/pegi18.png" alt="PEGI 18" height="75" width="50"></li>
+                    </ol>
+                </section>
+            </article>
+        </main>
+            <!--Aquí hago uso de un tag footer el cual hace referencia al pie de página de mi web. Este lo uso para dar información sobre la redes sociales relevantes de mi web, temas legales, etc.-->
+            <footer>
+                <p><img src="MEDIA/img/logo_twitter.png" alt="logo twitter" height="50" width="50"> <img src="MEDIA/img/logo_reddit.png" alt="logo reddit" height="50" width="50"> <img src="MEDIA/img/logo_instagram.png" alt="logo instagram" height="50" width="50">
+                Copyright © 2021 Eneba. Todos los derechos reservados. SA “Helis play”, C/Gyneju 4-333, Vilnius, República de Lituania. <a href="TERMS_OF_USE.html">Data policy & Terms of use</a></p>
+            </footer>
+    </body>
+</html>
